@@ -1,3 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #221f1a;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+a {
+  color: #221f1a;
+  text-decoration: none;
+}
+a:hover {
+  color: #f8a055;
+  transition: 0.4s ease;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.singleHeaders {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.01)), url(../img/header2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+.singleHeaders h1 {
+  font-size: 3rem;
+  color: #f8a055;
+  text-shadow: 0 0 2px #221f1a;
+}
+.singleHeaders button {
+  padding: 15px 30px;
+  background: #f8a055;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.singleHeaders button:hover {
+  cursor: pointer;
+  transition: 0.4s ease;
+  background: #fcd7b7;
+}
+
+/***nav***/
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav .container .logo {
+  color: #f8a055;
+  font-size: 2rem;
+  font-weight: 800;
+}
+nav .container .logo span {
+  font-weight: 300;
+  color: #221f1a;
+  font-style: italic;
+}
+nav .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav .container ul li {
+  margin-left: 50px;
+}
+
+/**footer**/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
+}
+footer article:first-child {
+  flex: 7;
+  background: #5a574e;
+  padding: 80px;
+}
+footer article:first-child h3 {
+  padding-bottom: 30px;
+}
+footer article:last-child {
+  flex: 5;
+  background: #f8a055;
+  padding: 80px;
+}
+footer article:last-child i {
+  text-shadow: 0 0 2px #221f1a;
+}
+
+.bottomBar {
+  text-align: center;
+  padding: 10px;
+}
+.bottomBar a {
+  color: #f8a055;
+}
+.bottomBar a:hover {
+  color: #221f1a;
+}
+
+/**mainHeader**/
+.mainHeader {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.01)), url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mainHeader div {
+  flex: 0 0 40%;
+  margin-left: 10%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.99));
+  padding: 50px;
+}
+.mainHeader div h1 {
+  font-size: 4rem;
+  color: #f8a055;
+  text-shadow: 0 0 2px #221f1a;
+}
+.mainHeader div button {
+  padding: 15px 30px;
+  background: #f8a055;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.mainHeader div button:hover {
+  cursor: pointer;
+  transition: 0.4s ease;
+  background: #fcd7b7;
+}
+
+/**uvod**/
+.uvod {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.uvod article {
+  flex: 1;
+  padding: 50px;
+}
+.uvod article h2 {
+  font-weight: 800;
+}
+.uvod article h2 span {
+  font-weight: 300;
+  font-style: italic;
+}
+.uvod article h3 {
+  font-size: 5rem;
+  color: #f8a055;
+  text-shadow: 0 0 2px #221f1a;
+}
+.uvod article h4 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/**zeleno**/
+.zeleno {
+  padding: 70px 0;
+  color: #fff;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+.zeleno .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 /*# sourceMappingURL=style.css.map */

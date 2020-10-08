@@ -1,15 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'partials/header.php'; ?>    
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Food</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <header class="mainHeader">
+        <div>
+            <h1>Odaberite zdravlje</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis omnis alias? Aperiam aliquid reiciendis culpa ut ipsa sit, eius nisi deserunt? Numquam fuga, incidunt accusantium omnis error mollitia natus.
+            </p>
+            <button>Pročitajte više</button>
+        </div>
+    </header>
 
-<body>
-</body>
+<!-- uvod -->
+<section class="uvod container">
+        <article>
+            <h2>Koraci do <span>zdravlja</span></h2>
+            <h3>01</h3>
+            <h4>Dole ugljeni hidrati</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet at tempora natus nemo ea placeat odio debitis totam, vero aliquam fugiat error quam inventore quae, quos veritatis quibusdam pariatur.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ratione, vel debitis sed nemo doloremque voluptates accusantium, eligendi similique at.</p>
+            <h3>02</h3>
+            <h4>Gore proteini</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolore tempora modi quod vel, commodi possimus tenetur quos debitis ratione, ipsam similique, doloribus est excepturi dignissimos delectus quibusdam quisquam pariatur.</p>
+        </article>
+    </section>
 
-</html>
+<?php include 'partials/footer.php'; ?>   
+
