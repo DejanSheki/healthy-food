@@ -34,6 +34,11 @@ a:hover {
 h2 {
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 ul {
   list-style: none;
@@ -51,10 +56,32 @@ ul {
   flex-wrap: wrap;
   margin-left: 10%;
 }
+@media (max-width: 768px) {
+  .singleHeaders {
+    background-position: left;
+    background-size: cover;
+    height: 50vh;
+  }
+}
+@media (max-width: 768px) {
+  .singleHeaders {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5%;
+  }
+}
 .singleHeaders h1 {
   font-size: 3rem;
   color: #f8a055;
   text-shadow: 0 0 2px #221f1a;
+}
+@media (max-width: 768px) {
+  .singleHeaders h1 {
+    font-size: 2rem;
+  }
 }
 .singleHeaders button {
   padding: 15px 30px;
@@ -70,6 +97,11 @@ ul {
   transition: 0.4s ease;
   background: #f9ae6d;
 }
+@media (max-width: 768px) {
+  .singleHeaders button {
+    margin-bottom: 30px;
+  }
+}
 
 /***nav***/
 nav .container {
@@ -78,6 +110,15 @@ nav .container {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 nav .container .logo {
   color: #f8a055;
@@ -99,6 +140,11 @@ nav .container ul {
 nav .container ul li {
   margin-left: 50px;
 }
+@media (max-width: 768px) {
+  nav .container ul li {
+    margin: 10px;
+  }
+}
 
 /**footer**/
 footer {
@@ -108,6 +154,15 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   color: #fff;
+}
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 footer article:first-child {
   flex: 7;
@@ -155,10 +210,21 @@ footer article:last-child i {
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.99));
   padding: 50px;
 }
+@media (max-width: 768px) {
+  .mainHeader div {
+    flex: 0 0 100%;
+    margin-left: 0%;
+  }
+}
 .mainHeader div h1 {
   font-size: 4rem;
   color: #f8a055;
   text-shadow: 0 0 2px #221f1a;
+}
+@media (max-width: 768px) {
+  .mainHeader div h1 {
+    font-size: 2rem;
+  }
 }
 .mainHeader div button {
   padding: 15px 30px;
@@ -214,6 +280,13 @@ footer article:last-child i {
   background-size: cover;
   height: auto;
 }
+@media (max-width: 768px) {
+  .zeleno, .organic {
+    background-position: right;
+    background-size: cover;
+    height: auto;
+  }
+}
 .zeleno .container, .organic .container {
   display: flex;
   justify-content: space-between;
@@ -223,6 +296,11 @@ footer article:last-child i {
 }
 .zeleno .container article, .organic .container article {
   flex: 0 0 45%;
+}
+@media (max-width: 768px) {
+  .zeleno .container article, .organic .container article {
+    flex: 0 0 100%;
+  }
 }
 .zeleno .container article img, .organic .container article img {
   width: 100%;
@@ -235,6 +313,19 @@ footer article:last-child i {
 /**organic**/
 .organic {
   background-image: url(../img/bg2.jpg);
+}
+@media (max-width: 768px) {
+  .organic .container article:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .organic .container article:nth-child(2) p {
+    order: -1;
+    margin-bottom: 30px;
+  }
 }
 
 /**poruci**/
@@ -253,12 +344,22 @@ footer article:last-child i {
   height: 50vh;
   flex: 1;
 }
+@media (max-width: 768px) {
+  .poruci article:nth-child(1) {
+    flex: 0 0 100%;
+  }
+}
 .poruci article:nth-child(2) {
   background-image: url(../img/poruci2.jpg);
   background-position: center;
   background-size: cover;
   height: 50vh;
   flex: 1;
+}
+@media (max-width: 768px) {
+  .poruci article:nth-child(2) {
+    flex: 0 0 100%;
+  }
 }
 .poruci article:nth-child(3) {
   background: #f8a055;
@@ -270,6 +371,11 @@ footer article:last-child i {
   flex-wrap: wrap;
   height: 50vh;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .poruci article:nth-child(3) {
+    flex: 0 0 100%;
+  }
 }
 .poruci article:nth-child(3) button {
   padding: 15px 30px;

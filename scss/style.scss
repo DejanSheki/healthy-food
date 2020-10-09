@@ -79,6 +79,9 @@ a {
 
 h2 {
     font-size: 2rem;
+    @media(max-width: 768px) {
+        font-size: 2rem;
+    }
 }
 
 ul {
@@ -90,18 +93,34 @@ ul {
     @include bgImg(center,
     cover,
     50vh);
+    @media(max-width: 768px) {
+        @include bgImg(left, cover, 50vh);
+    }
     @include flex(center,
     flex-start,
     column,
     wrap);
     margin-left: 10%;
+    @media(max-width: 768px) {
+        @include flex(flex-end,
+        flex-start,
+        column,
+        wrap);
+        margin-left: 5%;
+    }
     h1 {
         font-size: 3rem;
         color: $orange;
         text-shadow: $textShadow;
+        @media(max-width: 768px) {
+            font-size: 2rem;
+        }
     }
     button {
         @include btn;
+        @media(max-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -114,6 +133,9 @@ nav {
         center,
         row,
         wrap);
+        @media(max-width: 768px) {
+            @include flex(space-between, center, column, wrap);
+        }
         .logo {
             color: $orange;
             font-size: 2rem;
@@ -131,6 +153,9 @@ nav {
             wrap);
             li {
                 margin-left: 50px;
+                @media(max-width: 768px) {
+                    margin: 10px;
+                }
             }
         }
     }
@@ -144,6 +169,9 @@ footer {
     stretch,
     row,
     wrap);
+    @media(max-width: 768px) {
+        @include flex(center, stretch, column, wrap);
+    }
     color: $white;
     article:first-child {
         flex: 7;
@@ -191,10 +219,17 @@ footer {
         margin-left: 10%;
         background: linear-gradient(45deg, rgba($white, 0.01), rgba($white, 0.99));
         padding: 50px;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+            margin-left: 0%;
+        }
         h1 {
             font-size: 4rem;
             color: $orange;
             text-shadow: $textShadow;
+            @media(max-width: 768px) {
+                font-size: 2rem;
+            }
         }
         button {
             @include btn;
@@ -243,6 +278,9 @@ footer {
     @include bgImg(center,
     cover,
     auto);
+    @media(max-width: 768px) {
+        @include bgImg(right, cover, auto);
+    }
     .container {
         @include flex(space-between,
         center,
@@ -250,6 +288,9 @@ footer {
         wrap);
         article {
             flex: 0 0 45%;
+            @media(max-width: 768px) {
+                flex: 0 0 100%;
+            }
             img {
                 width: 100%;
                 margin-bottom: 30px;
@@ -267,6 +308,17 @@ footer {
 .organic {
     @extend .zeleno;
     background-image: url(../img/bg2.jpg);
+    @media(max-width: 768px) {
+        .container {
+            article:nth-child(2) {
+                @include flex(space-between, center, row, wrap);
+                p {
+                    order: -1;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -284,6 +336,9 @@ footer {
         cover,
         50vh);
         flex: 1;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+        }
     }
     article:nth-child(2) {
         background-image: url(../img/poruci2.jpg);
@@ -291,6 +346,9 @@ footer {
         cover,
         50vh);
         flex: 1;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+        }
     }
     article:nth-child(3) {
         background: $orange;
@@ -301,6 +359,9 @@ footer {
         wrap);
         height: 50vh;
         text-align: center;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+        }
         button {
             @include btn;
             background: $white;
