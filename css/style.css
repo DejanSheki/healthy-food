@@ -68,7 +68,7 @@ ul {
 .singleHeaders button:hover {
   cursor: pointer;
   transition: 0.4s ease;
-  background: #fcd7b7;
+  background: #f9ae6d;
 }
 
 /***nav***/
@@ -172,7 +172,7 @@ footer article:last-child i {
 .mainHeader div button:hover {
   cursor: pointer;
   transition: 0.4s ease;
-  background: #fcd7b7;
+  background: #f9ae6d;
 }
 
 /**uvod**/
@@ -206,7 +206,7 @@ footer article:last-child i {
 }
 
 /**zeleno**/
-.zeleno {
+.zeleno, .organic {
   padding: 70px 0;
   color: #fff;
   background-image: url(../img/bg.jpg);
@@ -214,12 +214,27 @@ footer article:last-child i {
   background-size: cover;
   height: auto;
 }
-.zeleno .container {
+.zeleno .container, .organic .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.zeleno .container article, .organic .container article {
+  flex: 0 0 45%;
+}
+.zeleno .container article img, .organic .container article img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.zeleno .container article h2, .organic .container article h2 {
+  margin-bottom: 30px;
+}
+
+/**organic**/
+.organic {
+  background-image: url(../img/bg2.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */

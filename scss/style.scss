@@ -49,7 +49,7 @@ $height) {
     &:hover {
         cursor: pointer;
         transition: $transition;
-        background: lighten( $orange, 20%);
+        background: lighten( $orange, 5%);
     }
 }
 
@@ -248,5 +248,23 @@ footer {
         center,
         row,
         wrap);
+        article {
+            flex: 0 0 45%;
+            img {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            h2 {
+                margin-bottom: 30px;
+            }
+        }
     }
+}
+
+
+/**organic**/
+
+.organic {
+    @extend .zeleno;
+    background-image: url(../img/bg2.jpg);
 }
