@@ -10,7 +10,7 @@
     </header>
 
 <!-- uvod -->
-<section class="uvod container">
+    <section class="uvod container">
         <article>
             <h2>Koraci do <span>zdravlja</span></h2>
             <h3>01</h3>

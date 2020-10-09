@@ -268,3 +268,46 @@ footer {
     @extend .zeleno;
     background-image: url(../img/bg2.jpg);
 }
+
+
+/**poruci**/
+
+.poruci {
+    @include flex(center,
+    center,
+    row,
+    wrap);
+    color: $white;
+    article:nth-child(1) {
+        background-image: url(../img/poruci1.jpg);
+        @include bgImg(center,
+        cover,
+        50vh);
+        flex: 1;
+    }
+    article:nth-child(2) {
+        background-image: url(../img/poruci2.jpg);
+        @include bgImg(center,
+        cover,
+        50vh);
+        flex: 1;
+    }
+    article:nth-child(3) {
+        background: $orange;
+        flex: 1;
+        @include flex(center,
+        center,
+        column,
+        wrap);
+        height: 50vh;
+        text-align: center;
+        button {
+            @include btn;
+            background: $white;
+            &:hover {
+                background: $gray;
+                color: $white;
+            }
+        }
+    }
+}

@@ -13,7 +13,7 @@
             </article>
         </div>
     </section>
-    <!-- organic -->
+<!-- organic -->
     <section class="organic">
         <div class="container">
             <article>
